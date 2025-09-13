@@ -1,0 +1,44 @@
+.preload-box{
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white), #000000;
+    z-index: 5;
+    display: grid;
+    place-items: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    display: none;
+
+    background-color: rgb(4, 64, 64)
+
+}
+
+.preload-circle{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate360 0.5s linear infinite;
+
+    border: solid red 1px;
+
+}
+
+@keyframes rotate360{
+    0% { transform: translate(-50%, -50%) rotate(0); }
+    100% { transform: translate(-50%, -50%) rotate(1turn); }
+}
+
+.preload-box .loaded{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.preload-box .loaded .preload-circle{
+    animation-iteration-count: 1;
+}
