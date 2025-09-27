@@ -1,0 +1,85 @@
+*{
+    background-color: bisque;
+}
+
+.has-before,
+.has-after{
+    position: relative;
+    z-index: 1;
+}
+
+.has-before::before,
+.has-after::after{
+    content: "";
+    position: absolute;
+}
+
+/* aqui falto la propiedad par agregar cuadrado verde */
+
+.about .container{
+    display: grid;
+    gap: 40px;
+}
+
+/* Borders para las imagenes */
+
+.about-banner .img-1{
+    border-top-left-radius: var(--radius-50, 50px);
+}
+
+.about-banner .img-2{
+    border-bottom-right-radius: var(--radius-50, 50px);
+}
+
+.about .section-title{
+    margin-block: 10px 25px
+}
+
+.about-wrapper{
+    margin-block: 35px 25px;
+    display: grid;
+    gap: 20px;
+}
+
+.about-card .title-wrapper{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+    margin-block-end: 5px;
+}
+
+.about-card .title-wrapper{
+    color: var(--yellow-green);
+    font-size: 4rem;
+ 
+}
+
+.about-card .card-title{
+    color: var(--smoky-black);
+    font-family: var(--ff--quicksand);
+    font-size: var(--fs-8);
+}
+
+
+.about-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 10px;
+}
+
+.about-item .span{
+    color: var(--smoky);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+}
+
+.about .btn {
+    margin-block-start: 40px;
+}
+
+.play-btn{
+    position: absolute;
+    top: 50%;
+
+}

@@ -1,0 +1,75 @@
+
+
+.header{
+    background-color: blue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 25px;
+    z-index: 4;
+}
+
+.navbar,
+.header-action{
+    display: none;
+}
+
+.container{
+    padding-inline: 16px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle-btn{
+    font-size: 3rem;
+    
+}
+
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.25s var(--cubic-out);
+    z-index: 1;
+    border: solid rgb(0, 68, 255) 4px;
+}
+
+.navbar.active {
+  display: block; /* 👈 fuerza a mostrarse */
+  visibility: visible;
+  height: 224px;
+  transition-duration: 0.5s;
+
+  background-color: beige;
+}
+
+/* En escritorio el menú siempre visible */
+@media (min-width: 768px) {
+  .navbar {
+    display: block;
+    position: static;
+    height: auto;
+    visibility: visible;
+    background: transparent;
+  }
+  .nav-toggle-btn {
+    display: none;
+  }
+}
+
+.navbar-link{
+    color: var(--black), blueviolet;
+    font-family: var(), Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: var(--fw-700);
+    text-decoration: uppercase;
+    padding: 10px 15px;
+}

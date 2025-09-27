@@ -5,8 +5,6 @@ import { HERO_CONTENT } from "../../../utils/index"
 
 const Preloading = () => {
 
-
-
     //Logica js aqui
     const loadElement = document.querySelector("[data-preloader]");
 
@@ -16,16 +14,18 @@ const Preloading = () => {
 
 
     return(
-
-
         <section className="preload-box loaded" data-preloader>
+            <img src={HERO_CONTENT.image}
+                width="45"
+                height="75"
+                alt="loading" />
 
-            <img src={HERO_CONTENT.image} width="45" height="75" alt="loading" />
-
-            <img className="preload-circle" src={HERO_CONTENT.image} width="45" height="75" alt="loading" />
-
+            <img src={HERO_CONTENT.image}
+                className="preload-circle"
+                width="45" 
+                height="75"
+                alt="loading" />
         </section>
-
 
     )
 }
