@@ -61,3 +61,26 @@
     0% { box-shadow: 0 0 0 0 rebeccapurple; }
     100% { box-shadow: 0 0 0 20px transparent; }
 } 
+
+
+
+@media (min-width: 575px){
+    .stats-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (min-width: 768px){
+    
+    
+
+}
+
+@media (min-width: 992px){
+    .stats-banner{
+        height: 500px;
+    }
+
+}

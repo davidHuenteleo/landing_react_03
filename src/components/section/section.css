@@ -1,0 +1,70 @@
+.cta .container{
+    display: grid;
+    gap: 30px;
+}
+
+.cta-card{
+    background-color: rgb(156, 180, 18);
+    padding: 50px 30px 4px;
+    color: white;
+    border-radius: 20px;
+}
+
+.cta-card .card-title{
+    color: white;
+    line-height: 1.3;
+}
+
+.cta-card .card-text{
+   margin-block: 10px 30px; 
+}
+
+
+.cta-card .btn:is(:hover, :focus-visible){
+    background-color: white;
+    color: black;
+}
+
+.cta-banner{
+    height: 260px;
+    border-radius: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+
+
+@media (min-width: 575px){
+    .cta .container{
+        grid-template-columns: 1fr 0.5fr;
+        border: solid rgb(255, 255, 255) 4px;
+
+    }
+
+    .cta-card .h1{font-size: 3.6rem;}
+    .cta-card{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cta-card .card-text{
+        margin-block-end: o;
+    }
+
+    .cta-card .btn{
+        flex-shrink: 0;
+    }
+
+    .cta-banner{
+        height: 100%;
+    }
+
+}
+
+
+@media (min-width: 768px){
+    
+    
+
+}

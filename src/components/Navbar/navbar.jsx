@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./navbar.css"
 
 const Navbar = () => {
+
+
+    // Logica
+    
     const [isOpen, setIsOpen] = useState(false);
 
 

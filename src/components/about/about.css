@@ -1,5 +1,5 @@
 *{
-    background-color: bisque;
+    background-color: rgb(0, 0, 0);
 }
 
 .has-before,
@@ -20,6 +20,14 @@
     display: grid;
     gap: 40px;
 }
+
+.img-1, .img2{
+    width: 380x;
+    height: 382px;
+}
+
+
+
 
 /* Borders para las imagenes */
 
@@ -51,7 +59,7 @@
 .about-card .title-wrapper{
     color: var(--yellow-green);
     font-size: 4rem;
- 
+
 }
 
 .about-card .card-title{
@@ -83,3 +91,54 @@
     top: 50%;
 
 }
+
+
+@media (min-width: 575px){
+
+    .section{
+        border: solid rgb(255, 128, 0) 12px;
+    }
+
+    .about{
+        padding-block-start: 120px;
+    }
+
+    .about .container{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .about-banner .img-2{
+        margin-inline-start: auto;
+    }
+
+}
+
+
+@media (min-width: 768px){
+
+    .section{
+        border: solid rgb(255, 73, 213) 12px;
+    }
+
+}
+
+
+@media (min-width: 992px){
+
+        .about-banner .img-2{
+            margin-block-start: -140px;
+        }
+
+        .about-wrapper{
+            grid-template-columns: 1fr 2fr;
+        }
+}
+
+@media (min-width: 1200px){
+
+
+
+
+}
+

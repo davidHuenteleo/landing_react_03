@@ -1,0 +1,56 @@
+.contact{
+    padding-block: 40px 120px;
+    border-block-start: 1px solid chocolate
+}
+
+
+.contact-list{
+    display: grid;
+    gap: 25px;
+}
+
+.contact-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-card img{
+    width: 50px;
+}
+
+    .service .section-title{
+        max-width: 24ch;
+        margin-inline: auto;
+    }
+
+
+
+@media (min-width: 575px){
+
+    .contact-list{
+        background-color: black;
+
+        max-width: 70%;
+        margin-inline-start: auto;
+    }
+
+    .contact{
+        padding-block-end: 40px;
+    }
+    
+
+}
+
+
+@media (min-width: 768px){
+    
+    
+
+}
+
+
+@media (min-width: 992px){
+    
+
+}

@@ -1,0 +1,94 @@
+/* Global responsive system for media queries
+ - Centralized breakpoints, CSS variables and utilities
+ - Import this file once in your app entry (e.g., src/main.jsx)
+ - Use variables/utilities instead of scattering @media across components */
+
+:root {
+  /* Breakpoints (reference values) */
+  --bp-xs: 480px;
+  --bp-sm: 768px;
+  --bp-md: 992px;
+  --bp-lg: 1200px;
+  --bp-xl: 1400px;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* Container padding that adapts by breakpoint */
+  --container-px: 0rem;
+}
+
+/* Example: at &#x3C;=1300px, add horizontal padding to main container */
+@media (max-width: 1300px) {
+  :root { --container-px: 1.5rem; }
+}
+
+/* Helper to apply the global container padding (opt-in) */
+.container--padded { padding-inline: var(--container-px); }
+
+/* Visibility utilities */
+@media (max-width: 480px) {
+  .u-hide-xs { display: none !important; }
+  .u-show-xs { display: initial !important; }
+}
+@media (min-width: 481px) {
+  .u-show-xs { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  .u-hide-sm { display: none !important; }
+  .u-show-sm { display: initial !important; }
+}
+@media (min-width: 769px) {
+  .u-show-sm { display: none !important; }
+}
+
+@media (max-width: 992px) {
+  .u-hide-md { display: none !important; }
+  .u-show-md { display: initial !important; }
+}
+@media (min-width: 993px) {
+  .u-show-md { display: none !important; }
+}
+
+@media (max-width: 1200px) {
+  .u-hide-lg { display: none !important; }
+  .u-show-lg { display: initial !important; }
+}
+@media (min-width: 1201px) {
+  .u-show-lg { display: none !important; }
+}
+
+/* Simple responsive grid helpers */
+.u-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+.u-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.u-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+@media (max-width: 992px) {
+  .u-grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .u-grid--2,
+  .u-grid--3 { grid-template-columns: 1fr; }
+}
+
+/* Fluid text helpers using clamp() */
+:root {
+  --fs-fluid-sm: clamp(1.4rem, 1.1rem + 0.5vw, 1.6rem);
+  --fs-fluid-md: clamp(1.6rem, 1.2rem + 1vw, 2rem);
+  --fs-fluid-lg: clamp(2rem, 1.2rem + 2vw, 3rem);
+}
+.u-text-sm { font-size: var(--fs-fluid-sm); }
+.u-text-md { font-size: var(--fs-fluid-md); }
+.u-text-lg { font-size: var(--fs-fluid-lg); }

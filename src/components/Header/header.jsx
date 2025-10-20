@@ -11,7 +11,7 @@ const Header = () => {
         <section className="section hero" aria-label="home">
 
             <div className="container">
-                
+
                 {/* hero-content */}
                 <div className="hero-content" data-reveal="left">
 
@@ -26,24 +26,25 @@ const Header = () => {
                                 <p className="card-subtitle">Top speed</p>
                                 <p className="card-subtitle">80 km /h</p>
                             </div>
-
+                        </li>
+                        <li>
                             <div className="hero-card">
                                 <i>icon</i>
                                 <p className="card-subtitle">Top speed</p>
                                 <p className="card-subtitle">80 km /h</p>
                             </div>
-
+                        </li>
+                        <li>
                             <div className="hero-card">
                                 <i>icon</i>
                                 <p className="card-subtitle">Top speed</p>
                                 <p className="card-subtitle">80 km /h</p>
                             </div>
-                            
-
                         </li>
                     </ul>
 
-                    <a href="#" className="btn btn-primary">
+                    {/* Button */}
+                    <a href="#" className="btn btn-secondary">
                         <span className="span">
                             Button
                         </span>
@@ -51,19 +52,16 @@ const Header = () => {
 
                 </div>
 
-                {/* hero-banner */}
+                {/* image motocicleta */}
                 <figure className="hero-banner" data-reveal="right">
-                    <img src={heroBanner} alt="Banner principal de la app"
-                        width="1116" height="766"
-                        className="w-100"/>
+                    <img src={heroBanner} 
+                    alt="moto"
+                    className="w-100"/>
                 </figure>
-
 
             </div>
 
         </section>
-
-
     )
 }
 

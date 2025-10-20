@@ -1,6 +1,6 @@
 import "./about.css"
 
-// importamos la imagen y despues lo usamos
+// Import image and use it
 import img from "../../assets/images/about-banner-1.jpg";
 
 const About = () => {
@@ -9,16 +9,12 @@ const About = () => {
             <div className="container">
 
                 <figure className="about-banner" data-reveal="left">
-                    <img src={img} width="380" height="382"
-                         loading="lazy" alt="" className="w-100 img-1"/>
-
-                
-                      <img src={img} width="380" height="382"
-                         loading="lazy" alt="" className="w-100 img-2"/>
+                    <img src={img} loading="lazy" alt="" className="w-100 img-1"/>
+                    <img src={img} loading="lazy" alt="" className="w-100 img-2"/>
                 </figure>
- 
+
                 <div className="about-content" data-reveal="right">
-                    
+
                     <p className="section-subtitle has-before" id="about-label">
                         What We Do!
                     </p>
@@ -32,7 +28,7 @@ const About = () => {
                     </p>
 
                     <div className="about-wrapper">
-
+                        
                         <div className="about-card">
                             <div className="title-wrapper">
 
@@ -68,13 +64,10 @@ const About = () => {
                     <ul className="about-list">
                         <li className="about-item">
                             <span role="img" aria-label="car">🚗</span>
-
                             <span className="span">Detachable battery, take..</span>
                         </li>
-                        
-                        <li className="about-item">
 
-                          
+                        <li className="about-item">
                             <span className="">Enjoy a hassle-free ride by charging just for 3 hours.</span>
                         </li>
 
@@ -92,5 +85,5 @@ const About = () => {
         </section>
     )
 }
- 
+
 export default About;

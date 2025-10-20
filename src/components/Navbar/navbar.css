@@ -1,17 +1,18 @@
 
 
+.header-action{
+    display: none;
+}
+
 .header{
-    background-color: blue;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding-block: 25px;
     z-index: 4;
-}
 
-.navbar,
-.header-action{
-    display: none;
+        background-color: rgb(255, 136, 0);
 }
 
 .container{
@@ -25,25 +26,33 @@
 }
 
 .nav-toggle-btn{
-    font-size: 3rem;
-    
+  font-size: 3rem;
+}
+
+.nav-toggle-btn.active .open,
+.nav-toggle-btn .close{
+  display: none;
+}
+
+.nav-toggle-btn .open,
+.nav-toggle-btn.active .close{
+  display: block;
 }
 
 .navbar{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    transition: 0.25s var(--cubic-out);
-    z-index: 1;
-    border: solid rgb(0, 68, 255) 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: wheat;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.25s var(--cubic-out);
 }
 
+
 .navbar.active {
-  display: block; /* 👈 fuerza a mostrarse */
   visibility: visible;
   height: 224px;
   transition-duration: 0.5s;

@@ -1,4 +1,132 @@
-*{
-    border: solir darkgreen 4px;
-    background-color: bisque;
+.img-holder{
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--light-gray);
+    overflow: hidden;
 }
+
+.service .section-title{
+    text-align: center;
+    margin-block-end: 60px;
+
+    border: solid rgb(55, 0, 0) 1px;
+}
+
+
+.service .section-subtitle{
+    max-width: max-content;
+    margin-inline: auto;
+
+    border: solid red 1px;
+}
+
+.service-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-icon{
+    min-width: 75px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius-20) 0;
+    transition: var(--transition-1);
+
+    background-color: aquamarine;
+}
+
+.service-item:hover .card-icon{
+    border-radius: 0;
+    border-top-right-radius: var(--radius-20);
+    background-color: var(--smoky-black);
+}
+
+.service-list:first-child .service-item{
+    flex-direction: row-reverse;
+    margin-block-end: 40px;
+}
+
+.service-banner{
+    background-color: unset;
+}
+
+.service-item .card-title{
+    margin-block-end: 5px;
+}
+
+.service-item i{
+    font-size: 4.5rem;
+}
+
+.service-list:last-child .service-item{
+    margin-block-start: 40px;
+}
+
+
+
+@media (min-width: 575px){
+    .service .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .service-banner{
+        display: none;
+    }
+
+    .service-list:first-child .service-item:last-child{
+        margin-block-end: 0;
+    }
+
+    .service-list:last-child .service-item:first-child{
+        margin-block-start: 0;
+    }
+
+    .section{
+        border: solid rgb(255, 255, 255) 4px;
+    }
+
+    .service .section-title{
+        max-width: 24ch;
+        margin-inline: auto;
+    }
+
+}
+
+
+@media (min-width: 768px){
+
+
+}
+
+@media (min-width: 992px){
+
+
+}
+
+@media (min-width: 1200px){
+
+    .service .wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .service-list:first-child .service-item{
+        flex-direction: row;
+        text-align: right;
+    }
+
+    .service-banner{
+        display: block;
+        transform: scale(2.2);
+        z-index: -1;
+    }
+
+    .service .section-title{
+        margin-block-end: 130px;
+    }
+
+}
+

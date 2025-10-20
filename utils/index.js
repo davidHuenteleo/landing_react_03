@@ -7,6 +7,7 @@ export const LINKS = [
     name: "Services",
     link: "#services",
   },
+  
   {
     name: "Portfolio",
     link: "#portfolio",
