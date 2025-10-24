@@ -41,8 +41,8 @@ const Stats = () => {
                 <div className="stats-banner" data-reveal>
 
                         <img src={img} width="1398" height="565"
-                             loading="lazy" alt="video banner" className="img-cover"/>
-                        
+                            loading="lazy" alt="video banner" className="img-cover"/>
+
                         <button className="play-btn" aria-label="play video">
                             <span role="img" aria-label="car">p</span>
                         </button>
@@ -50,7 +50,7 @@ const Stats = () => {
 
             </div>
 
-        </section> 
+        </section>
     )
 }
 

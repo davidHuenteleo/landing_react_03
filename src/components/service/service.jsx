@@ -7,7 +7,7 @@ const Service = () => {
 
     return(
         <section className="section service" aria-labelledby="">
-            
+
             <p className="section-subtitle has-before" id="service-label" data-reveal>
                 What We Do!
             </p>
@@ -38,59 +38,116 @@ const Service = () => {
 
                     </li>
 
-                    {/* Li 02 */}
+                    {/* Li 01 */}
                     <li className="service-item">
+
                         <div>
                             <h3 className="h5 card-title">Zero Contact Travel</h3>
 
                             <p className="card-text">
                                 Charge Your electric vehicle at home using one of oir smart
                             </p>
-
                         </div>
 
-                         <i>icon</i>
+                        <div className="card-icon">
+                            <i>🏍️</i>
+                        </div>
 
                     </li>
 
-                    {/* Li 03 */}
+
+                    {/* Li 01 */}
                     <li className="service-item">
+
                         <div>
                             <h3 className="h5 card-title">Zero Contact Travel</h3>
 
                             <p className="card-text">
-                                Cnel perroe of oir smart
+                                Charge Your electric vehicle at home using one of oir smart
                             </p>
-
                         </div>
 
-        <i>icon</i>
+                        <div className="card-icon">
+                            <i>🏍️</i>
+                        </div>
 
                     </li>
 
-
                 </ul>
+
+
 
                 {/* image central */}
                 <figure className="service-banner img-holder" data-reveal="right">
                     <img src={img} alt="service banner" width="1116" height="766" className="img-cover"/>
                 </figure>
 
-                {/*content right */}
+
+
+                {/* content right */}
                 <ul className="service-list" data-reveal="right">
 
+                    {/* Li 01 */}
                     <li className="service-item">
-                        <div className="card-icon">
-                            <h3 className="h5 card-title">Recoverable Energy</h3>
+
+                        <div>
+                            <h3 className="h5 card-title">Zero Contact Travel</h3>
 
                             <p className="card-text">
-                                ccambiar por el original despues 
+                                Charge Your electric vehicle at home using one of oir smart
                             </p>
-
                         </div>
-                    </li>
-                </ul>
 
+                        <div className="card-icon">
+                            <i>🏍️</i>
+                        </div>
+
+                    </li>
+
+                    {/* Li 01 */}
+                    <li className="service-item">
+
+                        <div>
+                            <h3 className="h5 card-title">Zero Contact Travel</h3>
+
+                            <p className="card-text">
+                                Charge Your electric vehicle at home using one of oir smart
+                            </p>
+                        </div>
+
+                        <div className="card-icon">
+                            <i>🏍️</i>
+                        </div>
+
+                    </li>
+
+
+                    {/* Li 01 */}
+                    <li className="service-item">
+
+                        <div>
+                            <h3 className="h5 card-title">Zero Contact Travel</h3>
+
+                            <p className="card-text">
+                                Charge Your electric vehicle at home using one of oir smart
+                            </p>
+                        </div>
+
+                        <div className="card-icon">
+                            <i>🏍️</i>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div className="card-icon">
+                <h3 className="h5 card-title">Recoverable Energy</h3>
+
+                <p className="card-text">
+                    ccambiar por el original despues
+                </p>
             </div>
 
         </section>

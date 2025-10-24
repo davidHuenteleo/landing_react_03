@@ -14,11 +14,11 @@ const Navbar = () => {
             <div className="container">
 
                 <a href="#" className="logo">
-                     <img src="" width="160" height="50" alt="volti home" />
-                 </a>
+                    <img src="" width="160" height="50" alt="volti home" />
+                </a>
 
-                  <nav className={`navbar ${isOpen ? "active" : ""}`} data-navbar>
-                    <ul className="navbar-list"> 
+                <nav className={`navbar ${isOpen ? "active" : ""}`} data-navbar>
+                    <ul className="navbar-list">
 
                         <li className="navbar-item">
                             <a href="#" className="navbar-link">Home</a>

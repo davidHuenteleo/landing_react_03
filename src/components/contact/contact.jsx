@@ -9,14 +9,14 @@ const contact = () => {
         <section className="contact" aria-label="home">
 
             <div className="container">
-                
+
                 <ul className="contact-list">
 
                     <li>
                         <div className="contact-card">
                             <div className="card-icon">
                                 <img src={PhoneIcon} alt="phone" />
-                            </div> 
+                            </div>
 
                             <div>
                                 <h3 className="h6">Hot Line</h3>
@@ -28,12 +28,11 @@ const contact = () => {
                         </div>
                     </li>
 
-
                     <li>
                         <div className="contact-card">
                             <div className="card-icon">
                                 <img src={PhoneIcon} alt="phone" />
-                            </div> 
+                            </div>
 
                             <div>
                                 <h3 className="h6">Hot Line</h3>
@@ -45,12 +44,11 @@ const contact = () => {
                         </div>
                     </li>
 
-                    
                     <li>
                         <div className="contact-card">
                             <div className="card-icon">
                                 <img src={PhoneIcon} alt="phone" />
-                            </div> 
+                            </div>
 
                             <div>
                                 <h3 className="h6">Hot Line</h3>
@@ -63,7 +61,7 @@ const contact = () => {
                     </li>
 
                 </ul>
-               
+
             </div>
         </section>
     )

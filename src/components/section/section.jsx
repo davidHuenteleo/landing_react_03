@@ -15,7 +15,7 @@ const cta = () => {
                         <h2>Designed for the our roads.</h2>
 
                         <p className="card-text">
-                            Consectetur adiping elit sed jd loli la kira 
+                            Consectetur adiping elit sed jd loli la kira
                         </p>
                     </div>
 
@@ -27,8 +27,8 @@ const cta = () => {
                 </div>
 
                 <figure className="cta-banner">
-                    <img src={imgCover} 
-                        alt="cta-banner" loading="" 
+                    <img src={imgCover}
+                        alt="cta-banner" loading=""
                         width="330" height="206"
                         className="img-cover"/>
                 </figure>

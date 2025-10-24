@@ -16,7 +16,7 @@ const About = () => {
                 <div className="about-content" data-reveal="right">
 
                     <p className="section-subtitle has-before" id="about-label">
-                        What We Do!
+                        What We Do! g
                     </p>
 
                     <h2 className="section-text">
@@ -28,7 +28,8 @@ const About = () => {
                     </p>
 
                     <div className="about-wrapper">
-                        
+
+
                         <div className="about-card">
                             <div className="title-wrapper">
 

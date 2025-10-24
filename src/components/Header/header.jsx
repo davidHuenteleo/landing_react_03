@@ -54,7 +54,7 @@ const Header = () => {
 
                 {/* image motocicleta */}
                 <figure className="hero-banner" data-reveal="right">
-                    <img src={heroBanner} 
+                    <img src={heroBanner}
                     alt="moto"
                     className="w-100"/>
                 </figure>

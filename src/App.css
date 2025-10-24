@@ -12,7 +12,7 @@
     max-width: 1420px !important;
     margin: 0 auto;
     position: relative;
-    border: 0.5px solid rgb(6, 0, 0);
+    border: 0.5px solid rgb(255, 0, 0);
 
     background-color: var(--bento-card-vertical-alignment, #ffffff);
 }

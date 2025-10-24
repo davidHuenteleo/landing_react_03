@@ -42,10 +42,17 @@
     background-color: var(--smoky-black);
 }
 
+
+
 .service-list:first-child .service-item{
     flex-direction: row-reverse;
+
     margin-block-end: 40px;
 }
+
+
+
+
 
 .service-banner{
     background-color: unset;
