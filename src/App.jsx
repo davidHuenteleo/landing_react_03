@@ -11,12 +11,14 @@ import Section from './components/section/section'
 import Blog from './components/blog/blog'
 import Contact from './components/contact/contact'
 import Footer from './components/Footer/footer'
+import Navbar from './components/Navbar/navbar'
 
 function App() {
   return (
     <>
     <Preloading />
-    {/* <Navbar /> */}
+
+    <Navbar />
 
     <div className="container">
       <Header />

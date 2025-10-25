@@ -14,7 +14,7 @@
     position: relative;
     border: 0.5px solid rgb(255, 0, 0);
 
-    background-color: var(--bento-card-vertical-alignment, #ffffff);
+    background-color: var(--bento-card-vertical-alignment, #ff0000);
 }
 
 @media (max-width: 1300px) {

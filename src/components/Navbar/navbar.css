@@ -1,84 +1,138 @@
-
-
-.header-action{
-    display: none;
-}
-
-.header{
-    position: fixed;
+.nav-wrapper{
+    background-color: rgb(0, 155, 114);
+    padding: 0.5rem 0;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding-block: 25px;
-    z-index: 4;
+    z-index: 30;
+    backdrop-filter: blur(50px);
 
-        background-color: rgb(255, 136, 0);
+    border: solid 4px red;
 }
 
-.container{
-    padding-inline: 16px;
-}
-
-.header .container{
+.nav-content{
+    max-width: 1300px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 0 auto;
 }
 
-.nav-toggle-btn{
-  font-size: 3rem;
-}
-
-.nav-toggle-btn.active .open,
-.nav-toggle-btn .close{
-  display: none;
-}
-
-.nav-toggle-btn .open,
-.nav-toggle-btn.active .close{
-  display: block;
-}
-
-.navbar{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: wheat;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  transition: 0.25s var(--cubic-out);
-}
-
-
-.navbar.active {
-  visibility: visible;
-  height: 224px;
-  transition-duration: 0.5s;
-
-  background-color: beige;
-}
-
-/* En escritorio el menú siempre visible */
-@media (min-width: 768px) {
-  .navbar {
-    display: block;
-    position: static;
+.logo{
+    width: 8rem;
     height: auto;
-    visibility: visible;
-    background: transparent;
-  }
-  .nav-toggle-btn {
-    display: none;
-  }
 }
 
-.navbar-link{
-    color: var(--black), blueviolet;
-    font-family: var(), Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
-    font-weight: var(--fw-700);
-    text-decoration: uppercase;
-    padding: 10px 15px;
+.nav-content ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
 }
+
+.nav-content li{
+    margin: 0 1.5rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: antiquewhite;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* Animate hover */
+.menu-item::before{
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #456, rgb(165, 168, 170) 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Boton & hover effect */
+
+.contact-btn{
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(45, 150, 255);
+    background: linear-gradient(90deg, #456, #456 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    transition: all 0.3 ease;
+}
+
+.contact-btn:hover{
+    color: rgb(154, 30, 255);
+    background: beige;
+    outline: 1.5px solid #456;
+}
+
+.menu-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: aqua;
+    background: linear-gradient(90deg, #456);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn:hover{
+    color: aquamarine;
+    background: #456;
+    border: 1px solid;
+}
+
+/*Tamaños responsivos*/
+
+@media (max-width: 425px){
+    .logo{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 769px){
+    .menu-btn{
+        display: block;
+    }
+
+    .nav-content ul{
+        display: none;
+    }
+}
+
+@media (max-width: 1325px){
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+
+}
+

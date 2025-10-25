@@ -1,104 +1,47 @@
 import { useState } from "react";
 import "./navbar.css"
+import MobileNav from "./mobileNav/mobileNav"
 
 const Navbar = () => {
 
+    const [openMenu, setOpenMenu] = useState(false);
 
-    // Logica
-    
-    const [isOpen, setIsOpen] = useState(false);
-
+    const toggleMenu = () => {
+            setOpenMenu(!openMenu)
+    }
 
     return(
-        <section className="header" data-header>
-            <div className="container">
+        <>
+        <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
 
-                <a href="#" className="logo">
-                    <img src="" width="160" height="50" alt="volti home" />
-                </a>
+        <nav className="nav-wrapper">
+            <div className="nav-content">
 
-                <nav className={`navbar ${isOpen ? "active" : ""}`} data-navbar>
-                    <ul className="navbar-list">
+                <img className="logo" src="" alt="" />
 
-                        <li className="navbar-item">
-                            <a href="#" className="navbar-link">Home</a>
-                        </li>
+                <ul>
+                    <li><a className="menu-item" href="">Hoffme</a></li>
+                    <li><a className="menu-item" href="">Home</a></li>
+                    <li><a className="menu-item" href="">Home</a></li>
+                    <li><a className="menu-item" href="">Home</a></li>
 
-                        <li className="navbar-item">
-                            <a href="#" className="navbar-link">Home</a>
-                        </li>
+                    <button className="#ContactMe">
+                        botonsitoh
+                    </button>
+                </ul>
 
-                        <li className="navbar-item">
-                            <a href="#" className="navbar-link">Home</a>
-                        </li>
-
-                        <li className="navbar-item">
-                            <a href="#" className="contact-number">Home</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-                <div className="header-action">
-                        <a href="tel: + 6789876" className="contact-number">
-                        {/* icon */}
-
-                        <span className="span">+569 7894756</span>
-                    </a>
-
-                </div>
-
-                {/* Button */}
-                <button className="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler onClick={() => setIsOpen(!isOpen)}>
-
-                            {isOpen ? (
-                            // Icono CLOSE (X)
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="28"
-                            height="28"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="close"
-                            aria-hidden="true"
-                            >
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
-                        ) : (
-                            // Icono MENU (hamburguesa)
-                            <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="28"
-                            height="28"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="open"
-                            aria-hidden="true"
-                            >
-                            <line x1="3" y1="12" x2="21" y2="12" />
-                            <line x1="3" y1="6" x2="21" y2="6" />
-                            <line x1="3" y1="18" x2="21" y2="18" />
-                            </svg>
-                        )}
+                <button className="menu-btn" onClick={toggleMenu}>
+                    <span className={"material-symbols-outlined"} style={{fontSize: "1.8rem"}}>
+                        {openMenu ? "close" : "menu"}
+                    </span>
                 </button>
 
-               
             </div>
- 
-        </section>
+        </nav>
 
-
+        </>
     )
+
 }
 
 export default Navbar;

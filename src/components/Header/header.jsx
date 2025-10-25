@@ -6,8 +6,6 @@ import heroBanner from "../../assets/images/hero-banner.png";
 
 const Header = () => {
     return(
-
-
         <section className="section hero" aria-label="home">
 
             <div className="container">
